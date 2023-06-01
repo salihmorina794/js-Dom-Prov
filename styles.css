@@ -1,0 +1,109 @@
+
+/*i denna fil så stylar jag allt på hemsidan samt gör den responsive*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#vibe{
+    position: absolute;
+    top: 0;
+}
+
+
+#time{
+    position: absolute;
+    top: 5rem;
+    
+}
+
+img{
+    position: absolute;
+    top: 8rem;
+    width: 10vw;
+    height: 15vh; 
+    object-fit: cover;  
+}
+
+#header_c{
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 290px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(167, 250, 253);
+    width: 100vw;
+    height: 100vh;
+}
+
+.sm-container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 40vw;
+     height: 40vh;
+     gap: 12vh;
+     background-color:rgb(247, 236, 223);
+}
+
+.btn-c{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn1{
+    text-decoration: none;
+    background-color: rgb(34, 111, 226);
+    height: 8vh;
+    width: 6vw;
+    margin-top: 1.5rem;
+    border-radius:7%;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*här gör jag så att man kan se när man hoverar buttons*/
+
+.btn1:hover{
+    background-color: rgb(10, 27, 53);
+}
+
+/*här gör jag min hemsida responsive med media query*/
+
+@media (max-width: 1150px){
+    .sm-container{
+        gap: 8vh;
+    }
+    img{
+        width: 10rem;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 950px){
+    .sm-container{
+        gap: 4vh;
+    }
+    
+    .btn1{
+        font-size: 0.7rem;
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+@media (max-width: 700px){
+    .sm-container{
+        width: 17rem;
+        height: 20rem;
+    }
+}

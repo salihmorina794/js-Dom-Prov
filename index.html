@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--här är min main div som heter container som håller allting i sig-->
+    <div id="container" class="container">
+    <header id="header_c">
+         <!--här lägger jag till en h1 som kommer vissas när jag klickar på vibe knappen-->
+        <h1 id="vibe"></h1>
+         <!--här lägger jag till en paragraf som kommer vissas när jag klickar på time knappen-->
+        <p id="time"></p>
+         <!--här lägger jag in en bild-->
+        <img id="img" src="imgs/the-great-wall-of-china.jpg" alt="">
+    </header>
+        <div class="sm-container">
+             <!--här börjar koden till mina buttons-->
+            <div class="btn-c">
+                <button class="btn1" onclick="changebg()" >Change bg</button>
+                <button class="btn1" onclick="vibes()">Good vibes</button>
+                <button class="btn1" onclick="get_time()">Time</button>
+            </div>
+            <div class="btn-c">
+                <button class="btn1" onclick="changeimg()">Change picture</button>
+                <button class="btn1" onclick="hideimg()">Hide picture</button>
+                <button class="btn1" onclick="showimg()">Show Picture</button>
+            </div>
+            <div class="btn-c">
+                <button class="btn1" onclick="header()">Header</button>
+                <button class="btn1" onclick="remove_header()">Remove <br> Header</button>
+                <button class="btn1" onclick="show_header()">show <br> Header</button>
+            </div>
+        </div>
+    </div>
+    
+     <!--Detta behöver man om man använder script i en annan fil-->
+    <script src="script.js"></script>
+</body>
+</html>
